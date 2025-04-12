@@ -17,7 +17,7 @@ const initialTodos = [
       completed: false,
       date: new Date(),
     },
-  ];
+];
   
 const validationConfig = {
     formSelector: ".popup__form",
@@ -28,4 +28,4 @@ const validationConfig = {
     inactiveButtonClass: "button_disabled",
 };
 
-  export { initialTodos, validationConfig };
+export { initialTodos, validationConfig };
