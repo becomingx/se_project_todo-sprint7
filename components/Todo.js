@@ -19,8 +19,8 @@ import { v4 as uuidv4 } from "https://jspm.dev/uuid";
         const todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
         
         todoNameEl.textContent = this._data.name;
-        todoCheckboxEl.id = `todo-${this._todoElement.Id}`;
-        todoLabel.setAttribute("for", `todo-${this._todoElement.Id}`);
+        todoCheckboxEl.id = `todo-${this._todoElement.id}`;
+        todoLabel.setAttribute("for", `todo-${this._todoElement.id}`);
 
         const dueDate = new Date(this._data.date);
         if (!isNaN(dueDate)) {
