@@ -1,5 +1,16 @@
 
 import { validationConfig as settings } from "../utils/constants.js";
+/*
+You should not call enableValidation during submission
+
+The checklist says: there is no duplicate code. If a line of code has to be repeated, 
+it must be written as a separate function https://snipboard.io/p7QTAX.jpg
+
+A function should performs a single task
+
+Is missing the event listener for the change in the checkbox 
+*/
+
 
 class FormValidator {
     constructor(settings, formEl) {
