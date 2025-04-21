@@ -42,18 +42,22 @@ class Todo {
     this._todoElement = this._templateElement.content
       .querySelector(".todo")
       .cloneNode(true);
-
+  
     this._todoNameEl = this._todoElement.querySelector(".todo__name");
-    this._todoNameEl.textContent = this._data.name;
     this._todoDate = this._todoElement.querySelector(".todo__date");
     this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
-
+    this._todoCheckboxEl = this._todoElement.querySelector(".todo__completed");
+    this._todoLabel = this._todoElement.querySelector(".todo__label");
+  
+    this._todoNameEl.textContent = this._data.name;
+  
     this._setEventListeners();
     this._generateCheckboxEl();
     this._generateDueDateEl();
-
+  
     return this._todoElement;
-  }
-}
+  };
+  
+};
 
 export default Todo;
