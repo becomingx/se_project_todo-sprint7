@@ -1,10 +1,9 @@
-import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 
 class Todo {
-  constructor(data, selector) {
+  constructor(data, selector, uuid) {
     this._data = data;
     this._templateElement = document.querySelector(selector);
-    this._todoUUID = uuidv4();
+    this._todoUUID = uuid;
     this._completed = data.completed;
   };
 

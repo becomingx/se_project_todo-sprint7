@@ -19,8 +19,10 @@ const closeModal = (modal) => {
 };
 
 const generateTodo = (data) => {
-  const todo = new Todo(data, "#todo-template");
+  const todoElementUUID = uuidv4();
+  const todo = new Todo(data, "#todo-template", todoElementUUID);
   const todoElement = todo.getView();
+  
   return todoElement;
 };
 
