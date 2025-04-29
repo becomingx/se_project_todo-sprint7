@@ -50,12 +50,12 @@ addTodoForm.addEventListener("submit", (evt) => {
   const values = { name, date };
   renderTodo(values);
   closeModal(addTodoPopup);
+  TodoValidator.resetValidation(validationConfig, addTodoForm);
 });
 
 initialTodos.forEach(renderTodo);
 
 TodoValidator.enableValidation(validationConfig, addTodoForm);
-TodoValidator.resetValidation(validationConfig, addTodoForm);
 
 
 
